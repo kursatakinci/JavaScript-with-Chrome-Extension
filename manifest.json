@@ -10,7 +10,6 @@
     "scripts": ["background.js"],
     "persistent": false
   },
-
   "content_scripts": [
     {
       "matches": [
@@ -19,19 +18,14 @@
       "js": ["jquery-1.11.1.min.js", "background.js"]
     }
   ],
-  
   "browser_action": {
     "default_icon": "hello.png",
     "default_popup": "popup.html"
   },
-
   "permissions":[
     "storage",
     "contextMenus",
     "notifications",
     "tabs"
   ]
-    
-  
-
 }
